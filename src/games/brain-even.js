@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  bodyGame, checkAnswer, getNumber, showMessage, showQuestion, startGame,
+  bodyGame, checkAnswer, getNumber, startGame,
 } from '../index.js';
 
 const brainEven = () => {
