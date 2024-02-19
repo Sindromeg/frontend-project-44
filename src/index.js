@@ -4,8 +4,8 @@ export const getNumber = () => Math.floor(Math.random() * 100);
 
 export const startGame = (condition) => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name?');
-  console.log('Hello, ${name}!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(condition);
   return name;
 };
@@ -55,3 +55,27 @@ export const getProgression = () => {
   progression[element] = '..';
   return progression;
 };
+
+export const showQuestion = (gameName, elem1, elem2 = null, elem3 = null) => {
+  switch (gameName) {
+    case 'calc':
+      console.log(`Question: ${elem1} ${elem2} ${elem3}`);
+      break;
+    case 'even':
+      console.log(`Question: ${elem1}`);
+      break;
+    case 'prime':
+      console.log(`Question: ${elem1}`);
+      break;
+    case 'gcd':
+      console.log(`Question: ${elem1} ${elem2}`);
+      break;
+    case 'progression':
+      console.log(`Question: ${elem1.join(' ')}`);
+      break;
+    default:
+      console.log('No questions today :D');
+  }
+};
+
+export const showMessage = (message) => console.log(message);
