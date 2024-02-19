@@ -7,4 +7,8 @@
 
 2) brain-calc: https://asciinema.org/a/G2iOf2PlZfT3UaXHShONP77LD
 
-3) 
+3) brain-gcd: https://asciinema.org/a/1naUyLrtHaRxbVAoSKPipsPar
+
+4) brain-
+
+5) brain-
